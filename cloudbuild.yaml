@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: 
-    - 'build'
-    - '--build-arg', 'VELOCITY_JAR_URL=${_VELOCITY_JAR_URL}'
-    - '--build-arg', 'VELOCITY_TOML_URL=${_VELOCITY_TOML_URL}' 
-    - '-t', '${ 'gcr.io/myproject/myimage', '.'
+  - 'build'
+  - '--build-arg', 'VELOCITY_JAR_URL=${_VELOCITY_JAR_URL}'
+  - '--build-arg', 'VELOCITY_TOML_URL=${_VELOCITY_TOML_URL}' 
+  - '-t', '${ 'gcr.io/myproject/myimage', '.'
