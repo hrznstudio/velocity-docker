@@ -11,7 +11,7 @@ RUN sh /build.sh
 
 COPY ./run.sh /run.sh
 
-ENV JAVA_MEMORY=1G
+ENV JAVA_MEMORY=512M
 ENV JAVA_ARGS=
 
 CMD ["sh", "/run.sh"]
