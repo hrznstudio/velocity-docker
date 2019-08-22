@@ -4,8 +4,6 @@ steps:
   - 'build'
   - '--build-arg'
   - 'VELOCITY_JAR_URL=${_VELOCITY_JAR_URL}'
-  - '--build-arg'
-  - 'VELOCITY_TOML_URL=${_VELOCITY_TOML_URL}'
   - '-t'
   - 'gcr.io/possible-surf-250517/velocity'
   - '.'
