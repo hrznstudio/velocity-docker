@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Getting latest velocity.toml from $VELOCITY_TOML_URL"
-curl -s $VELOCITY_TOML_URL > /velocity/velocity.toml
+wget -q $VELOCITY_TOML_URL -O /velocity/velocity.toml
 
 sed -i "s/A Velocity Server/${HOSTNAME} - $(date +%s | sha256sum | base64 | head -c 8)/" /velocity/velocity.toml
 
